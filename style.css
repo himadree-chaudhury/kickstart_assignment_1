@@ -1,11 +1,10 @@
+/* !Universal Style */
 * {
   font-family: "IBM Plex Sans", sans-serif;
 }
+/* !Header Section Background Banner*/
 #hero-section {
   background-image: url("./assets/Frame 3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .left-hero {
-  width: 50%;
-} */
