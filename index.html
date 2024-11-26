@@ -12,6 +12,23 @@
         rel="stylesheet">
     <!-- *Icon link -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- *Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            'color-primary': '#D8FB78',
+                            'color-secondary': '#0F0F0F',
+                            'background': '',
+                        }
+                    }
+                }
+            }
+        </script>
     <!-- *Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- *Web Title -->
@@ -20,31 +37,31 @@
 
 <body>
     <!-- *Navigation Bar -->
-    <nav>
-        <div class="web-title"><b>Nerdy</b></div>
-        <div class="nav-menu">
+    <nav class="flex justify-between items-center">
+        <div class="web-title font-bold text-3xl">Nerdy</div>
+        <div class="nav-menu flex gap-5 items-center text-color-secondary">
             <a href="">Home</a><a href="">Projects</a><a href="">About</a><a href="">Contact</a>
         </div>
-        <div class="buy-btn">
-            <button>
+        <div class="buy-btn  ">
+            <button class="bg-color-primary border border-black gap-2 px-6 py-2 rounded-full font-semibold text-xl">
                 Buy Now
             </button>
         </div>
     </nav>
     <!-- *Hero Section -->
-    <header>
-        <div class="left-hero">
-            <b>
+    <header id="hero-section" class="flex gap-3"> 
+        <div class="left-hero flex flex-col  items-start justify-around">
+            <h1 class="font-bold text-4xl">
                 Designed to
                 effortlessly combine
                 style and functionality.
-            </b>
+            </h1>
             <p>
                 Unlock your potential with Phitron's Online Judge, a dynamic platform
                 for honing your coding skills through a diverse range of challenges for all
                 experience levels.
             </p>
-            <button>
+            <button class="bg-color-primary border border-black gap-2 px-6 py-2 rounded-full font-semibold text-xl">
                 Explore Deal
             </button>
         </div>
