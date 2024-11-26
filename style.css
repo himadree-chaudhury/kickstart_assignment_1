@@ -1,8 +1,11 @@
-#hero-section{
-    background-image: url('./assets/Frame 3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
+  font-family: "IBM Plex Sans", sans-serif;
 }
-.left-hero{
-    width: 50%;
+#hero-section {
+  background-image: url("./assets/Frame 3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-hero {
+  width: 50%;
 }

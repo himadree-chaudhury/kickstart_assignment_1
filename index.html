@@ -15,20 +15,20 @@
     <!-- *Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                            'color-primary': '#D8FB78',
-                            'color-secondary': '#0F0F0F',
-                            'background': '',
-                        }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#D8FB78',
+                        'color-secondary': '#0F0F0F',
+                        'background': '#f6f6f6',
                     }
                 }
             }
-        </script>
+        }
+    </script>
     <!-- *Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- *Web Title -->
@@ -49,7 +49,7 @@
         </div>
     </nav>
     <!-- *Hero Section -->
-    <header id="hero-section" class="flex gap-3"> 
+    <header id="hero-section" class="flex gap-3 justify-around">
         <div class="left-hero flex flex-col  items-start justify-around">
             <h1 class="font-bold text-4xl">
                 Designed to
@@ -70,20 +70,27 @@
         </div>
     </header>
     <!-- *Product Section -->
-    <main>
-        <b>Best Selling Products</b>
-        <p>Unlock your potential with Phitron's Online Judge, a dynamic platform for honing your coding skills through a
+    <main class="bg-background">
+        <h1 class="font-bold text-2xl text-center">Best Selling Products</h1>
+        <p class="text-color-secondary text-center">Unlock your potential with Phitron's Online Judge, a dynamic
+            platform for honing your coding skills through a
             diverse
             range of challenges for all experience levels.</p>
-        <div>
-            <div>
-                <img src="./assets/model-demonstrating-winter-cloths 1.png" alt="">
-                <b>Balenciaga Floral-Print Silk Shirt</b>
-                <p>$1644.00</p>
-                <button>Buy Now</button>
+        <div class="bg-white">
+            <div class="flex flex-col gap-5">
+                <img class="bg-background" src="./assets/model-demonstrating-winter-cloths 1.png" alt="">
                 <div>
-                    <button>Add To Cart</button>
-                    <i class="uil uil-heart"></i>
+                    <b>Balenciaga Floral-Print Silk Shirt</b>
+                    <p>$1644.00</p>
+                </div>
+                <button
+                    class="bg-color-primary border border-black gap-2 px-6 py-1 rounded-full font-semibold text-lg w-full">Buy
+                    Now</button>
+                <div class="flex gap-2 items-center justify-between">
+                    <button
+                        class="border border-slate-300 gap-2 px-6 py-1 rounded-full font-semibold text-lg w-11/12">Add
+                        To Cart</button>
+                    <img src="./assets/Frame 2087325623.png" alt="">
                 </div>
             </div>
             <div></div>
