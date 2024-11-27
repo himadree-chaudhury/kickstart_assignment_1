@@ -1,6 +1,7 @@
 /* !Universal Style */
 * {
   font-family: "IBM Plex Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 /* !Header Section Background Banner*/
 #hero-section {
